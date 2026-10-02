@@ -40,6 +40,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           comment-on-alert: true
           alert-comment-cc-users: "@$GITHUB_ACTOR"
+          max-items-in-chart: 2
       - name: Show stored history
         run: |
           jq -r '.entries | to_entries[] | "\(.key) entries=\(.value|length) commits=\([.value[].commit.id[0:8]]|join(","))"' ./cache/benchmark-data.json
