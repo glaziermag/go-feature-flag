@@ -1,6 +1,6 @@
 goos: linux
 goarch: amd64
 pkg: github.com/thomaspoignant/go-feature-flag
-BenchmarkBoolVar_RolloutProgressive-2   	 1000000	      1000 ns/op
+BenchmarkBoolVar_RolloutProgressive-2   	 1000000	      3000 ns/op
 PASS
 ok  	github.com/thomaspoignant/go-feature-flag	1.0s
